@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div
+    .image-block
+    h1= title
+    p Quote: #{quote}
+    img.className#IdName(src="/images/walter.jpg" alt="Walter Title")
+
