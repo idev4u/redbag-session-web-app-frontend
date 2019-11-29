@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-// var endpoint = process.env.API_ENDPOINT
-var endpoint = 'http://web-app-backend.83zcump5ct.eu-west-1.elasticbeanstalk.com'
+var endpoint = process.env.API_ENDPOINT
 var morgan = require('morgan')
 var quoteOfTheDay = { "quote": "Wenn du den Baum siehst, in den du rein fährst, hast untersteuern. Wenn ihn nur hörst, hast übersteuern" }
 
