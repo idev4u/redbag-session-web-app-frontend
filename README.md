@@ -3,9 +3,28 @@
 ## run on your local machine
 
 ```sh
-git clone git@github.com:idev4u/redbag-session-web-app-frontend.git
-cd redbag-session-web-app-frontend
+mkdir -p demo-web && cd demo-web
 ```
+
+## Frontend
+```sh
+git clone git@github.com:idev4u/redbag-session-web-app-frontend.git frontend-web-app
+cd frontend-web-app
+```
+
+Init the project demo-app is creating the environment
+```sh
+$ eb init demo-app -p node.js --region eu-west-1
+```
+
+create the app runtime box, it will autmagically deploy the app
+```sh
+eb create frontend-web-app
+```
+
+Open the browser with the url open http://.....
+
+## Backend
 
 setup the backend
 ```
